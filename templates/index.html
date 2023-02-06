@@ -1,0 +1,16 @@
+{% extends './layout.html' %}
+
+{% block title %}{{data.title}}{% endblock %}
+
+{% block body %}
+<h1>{{data.date}}</h1>
+{% if data.length > 0 %}
+<ul>
+	{% for i in array %}
+	<li>{{i}}</li>
+	{% endfor %}
+</ul>
+{% else %}
+<h2>No tenemos nada apuntado</h2>
+{% endif %}
+{% endblock %}

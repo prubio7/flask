@@ -1,0 +1,1 @@
+alert('Lista de la compra');
