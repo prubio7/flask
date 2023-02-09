@@ -34,10 +34,10 @@ def contact(contact,age):
 	return render_template('contact.html',data=data)
 
 def not_found(error):
-	return render_template('404.html')
+	return render_template('404.html'),404
 	#return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
-	app.run(debug=True,host='0.0.0.0',port=80)
 	app.register_error_handler(404,not_found)
+	app.run(debug=True,host='0.0.0.0',port=80)
