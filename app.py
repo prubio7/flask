@@ -34,7 +34,7 @@ def contact(contact,age):
 	return render_template('contact.html',data=data)
 
 def not_found(error):
-	return render_template('404.html'),404
+	return render_template('404.html')
 	#return redirect(url_for('index'))
 
 
